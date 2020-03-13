@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nso:MT_VMS_AdvancedShippingNotification xmlns:nso="http://srl.in/VMS_ASN_GRN">
+<ASN_Header>
+<ASNNo>110000086</ASNNo>*******
+<ASNDate>2020-02-22</ASNDate>***********
+<ASNApprovalDate>2020-02-22</ASNApprovalDate>
+<VendorInvoiceDate>2020-02-22</VendorInvoiceDate>
+<VendorInvoiceNo>45353</VendorInvoiceNo>****************
+<Status>Approved</Status>*****************
+<InvoiceBaseAmount>5600.0</InvoiceBaseAmount>************
+<InvoiceTaxAmount>90.0</InvoiceTaxAmount>*************
+<PONo>4000180786</PONo>******************
+<VendorCode>1100006171</VendorCode>****************
+<ASN_Items>
+<PONo>4000180786</PONo>****************
+<ItemCategory>Ddfgh</ItemCategory>***********
+<PlantCode>0002</PlantCode>**************
+<POLineItemNo>1</POLineItemNo>*************
+<DeliverQuantity>10</DeliverQuantity>**********
+<Batch>Batch</Batch>*************
+<ExpiryDate>24-02-2020</ExpiryDate>**********
+<BARCODE>3242568</BARCODE>*******************
+<SAPGRN/>***********
+<SAPInvoice/>**************
+<InvoiceDate/>***********
+</ASN_Items>
+</ASN_Header>
+</nso:MT_VMS_AdvancedShippingNotification>
+
+
+
+
+ASNDate
+ExpiryDate
+ASNApprovalDate
+VendorInvoiceDate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ String filePath = "C:\\Users\\xyz\\Desktop\\";
+        String originalFileName = "96172560100_copy2.pdf";
+        String newFileName = "test.pdf";
+
+        byte[] input_file = Files.readAllBytes(Paths.get(filePath+originalFileName));
+
+        byte[] encodedBytes = Base64.getEncoder().encode(input_file);
+        String encodedString =  new String(encodedBytes);
+        byte[] decodedBytes = Base64.getDecoder().decode(encodedString.getBytes());
+
+        FileOutputStream fos = new FileOutputStream(filePath+newFileName);
+        fos.write(decodedBytes);
+        fos.flush();
+        fos.close();
+
+
+
+
+
+
+
+
