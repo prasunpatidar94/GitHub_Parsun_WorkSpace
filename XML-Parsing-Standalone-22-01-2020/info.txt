@@ -1,0 +1,180 @@
+
+
+
+
+
+
+
+
+
+ContractNo
+ContractType
+MaterialNo
+ItemNo
+PlantCodeFirstParty
+Status
+VendorCodeSecondParty
+Quantity
+ContractCreationDate
+ContractStartDate
+ContractExpiryDate
+InstallationDate
+Section
+DateOfCancellation
+ORBASICPRICE
+AMCCHARGESFORORPURCHASE
+CMCCHARGEFORORPURCHASE
+RFPNo
+MasterContractNo
+InternalMOU
+ExpiryContractRemainderDays
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  xml                 java 
+  
+  
+header
+
+InvoiceNo             invoiceId
+VendorNo				vendorNo
+VendorName				vendorName
+ASNNo                   asnNo
+InvoicePostingDate		creationDate
+
+
+InvoiceItems
+
+
+
+PONo                   pending
+POLineItemCategory    pending
+POLineItemNo				itemNo
+GRNQuantity					quantity
+MovementType		hide
+GRNNo				hide
+MaterialNo					materical
+MaterialDescription				materialDescription
+TotalAmount					totalAmount
+TaxAmount					taxAmount
+Currancy					currency
+Status							status
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+POHeader::::::::::
+
+PurchaseOrderNo 	   ebeln
+PODocumentType        bsart
+POCreationDate        aedat
+CompanyCode           bukrs
+VendorCode             lifnr
+PurchaseOrg			ekorg
+AckIndicator		ackno
+ContractNo			cntr_no
+ItemCategory        pstyp
+
+
+
+
+POItemDetails:::::::::::::::
+
+
+
+ItemNo              ebelp
+MaterialNo			matnr
+Plant				 werks
+StorageLocation		   lgort
+MaterialGroup		matkl
+POQuantity			    menge
+TotalNetPrice		    netpr
+DeliveryDate		eindt
+Currency			waers
+
+
+
+
+	@RequestParam("ADRID") String adrid, @RequestParam("PSWRD") String pswrd,
+			@RequestParam("BEGDA") String begda, 
+			@RequestParam("ENDDA") String endda,
+			@RequestParam("SUNAME") String sunam,
+			@RequestParam("ENAME") String ename,
+			@RequestParam("EMAIL") String email, 
+			@RequestParam("MOBILE") String pmble,
+			@RequestParam("BPTYPE") String bptype,
+			@RequestParam("CRNAM") String crnam,
+			@RequestParam("CRDAT") String crdat,
+			@RequestParam("CRTIM") String crtim,
+			@RequestParam("CDNAM") String cdnam,
+			@RequestParam("CDDAT") String cddat,
+			@RequestParam("CDTIM") String cdtim,
+			@RequestParam("ROLE") String role, 
+			@RequestParam("ALEVL") String alevl,
+			@RequestParam("DEGFLG") String deg, 
+			@RequestParam("ADFLG") String adflg,
+			@RequestParam("BPVALE") String bpvale,
+			 @RequestParam("DEPT") String dept,
+			@RequestParam("ID") String userTableId)
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			CreatedBy
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
